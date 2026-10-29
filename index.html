@@ -1,88 +1,36 @@
 <!doctype html>
 <html lang="pt-BR">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <meta name="theme-color" content="#101116">
-  <meta name="description" content="VFX Motion AI — estúdio local de motion design e efeitos para celular.">
-  <link rel="manifest" href="./manifest.webmanifest">
-  <link rel="icon" href="./icons/icon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="./styles.css">
-  <title>VFX Motion AI</title>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#101116"><meta name="description" content="VFX Motion AI — editor 3D local gratuito para Android">
+<link rel="manifest" href="./manifest.webmanifest"><link rel="icon" href="./icons/icon.svg" type="image/svg+xml"><link rel="stylesheet" href="./styles.css">
+<title>VFX Motion AI — 3D Studio</title>
 </head>
 <body>
-  <header class="topbar">
-    <div class="brand-mark">VFX<span>·</span></div>
-    <div class="brand-copy"><strong>VFX Motion AI</strong><small>LOCAL MOTION STUDIO</small></div>
-    <button id="installBtn" class="ghost install" hidden>Instalar</button>
-  </header>
-
-  <main>
-    <section class="hero">
-      <p class="eyebrow">SEU ESTÚDIO NO CELULAR</p>
-      <h1>Crie. Anime.<br><span>Impressione.</span></h1>
-      <p class="intro">Monte uma abertura cinematográfica com efeitos locais — sem login, sem API paga e sem créditos de IA.</p>
-    </section>
-
-    <section class="preview-card">
-      <div class="preview-head"><div><span class="live-dot"></span> PRÉ-VISUALIZAÇÃO</div><span id="previewStatus">PRONTO</span></div>
-      <div class="canvas-wrap"><canvas id="stage" width="720" height="1280" aria-label="Pré-visualização da animação"></canvas>
-        <div id="canvasHint" class="canvas-hint">Sua animação aparece aqui</div>
-      </div>
-      <div class="preview-controls">
-        <button id="playBtn" class="primary">▶ Reproduzir</button>
-        <button id="resetBtn" class="secondary">↺ Reiniciar</button>
-      </div>
-    </section>
-
-    <section class="panel">
-      <div class="section-title"><span class="step">01</span><div><h2>Seu símbolo</h2><p>Use um logotipo ou crie uma inicial.</p></div></div>
-      <label class="field-label" for="logoText">Texto ou inicial</label>
-      <input id="logoText" maxlength="12" value="R" autocomplete="off" placeholder="Ex.: R">
-      <label class="field-label" for="logoFile">Ou carregue seu logotipo (PNG/JPG/WebP)</label>
-      <input id="logoFile" type="file" accept="image/png,image/jpeg,image/webp">
-      <button id="clearLogo" class="text-button">Remover imagem enviada</button>
-    </section>
-
-    <section class="panel">
-      <div class="section-title"><span class="step">02</span><div><h2>Direção visual</h2><p>Escolha a energia da cena.</p></div></div>
-      <label class="field-label" for="effect">Efeito</label>
-      <select id="effect">
-        <option value="reveal">3D Logo Reveal</option>
-        <option value="particles">Partículas cósmicas</option>
-        <option value="energy">Energia violeta + ciano</option>
-        <option value="orbit">Órbita cinematográfica</option>
-      </select>
-      <div class="two-col">
-        <div><label class="field-label" for="duration">Duração</label>
-          <select id="duration"><option value="5">5 segundos</option><option value="8" selected>8 segundos</option><option value="12">12 segundos</option></select>
-        </div>
-        <div><label class="field-label" for="format">Formato</label>
-          <select id="format"><option value="vertical" selected>Vertical 9:16</option><option value="square">Quadrado 1:1</option><option value="wide">Horizontal 16:9</option></select>
-        </div>
-      </div>
-      <label class="field-label" for="tagline">Texto secundário (opcional)</label>
-      <input id="tagline" maxlength="48" value="DESIGN STUDIO" placeholder="Ex.: DESIGN STUDIO">
-      <div class="color-row">
-        <div><label class="field-label" for="violet">Violeta</label><input id="violet" type="color" value="#743BFF"></div>
-        <div><label class="field-label" for="cyan">Ciano</label><input id="cyan" type="color" value="#00D9FF"></div>
-        <div><label class="field-label" for="background">Fundo</label><input id="background" type="color" value="#101116"></div>
-      </div>
-      <button id="applyBtn" class="secondary full">Aplicar configurações</button>
-    </section>
-
-    <section class="export-panel">
-      <div class="section-title"><span class="step">03</span><div><h2>Exportar vídeo</h2><p>Renderização feita no seu aparelho.</p></div></div>
-      <div class="notice"><strong>100% local</strong><span>A exportação usa a gravação do canvas do navegador. O arquivo é WebM; compatibilidade e desempenho dependem do aparelho.</span></div>
-      <div class="progress-shell"><div id="progressBar"></div></div>
-      <p id="exportStatus" class="status-text">Pronto para exportar.</p>
-      <button id="exportBtn" class="primary full">⬇ Gerar vídeo WebM</button>
-      <a id="downloadLink" class="download-link" hidden>Baixar vídeo</a>
-    </section>
-
-    <section class="privacy-note"><span>◆</span><p><strong>Seus arquivos ficam com você.</strong><br>Este MVP não envia imagens nem projetos para servidores. Guarde os vídeos e faça cópias dos seus arquivos exportados.</p></section>
-  </main>
-  <footer>VFX MOTION AI <span>•</span> PROTÓTIPO LOCAL GRATUITO</footer>
-  <script src="./app.js"></script>
-</body>
-</html>
+<header class="topbar"><div class="brand-mark">VFX</div><div class="brand-copy"><strong>VFX Motion AI</strong><small>LOCAL 3D MOTION STUDIO</small></div><button id="installBtn" class="ghost" hidden>Instalar</button></header>
+<main>
+<section class="hero"><p class="eyebrow">MOTOR 3D LOCAL • ANDROID FIRST</p><h1>Motion que<br><span>se destaca.</span></h1><p class="intro">Crie cenas 3D com câmera, luzes, materiais e partículas diretamente no navegador. Sem login, sem API paga e sem créditos por render.</p></section>
+<section class="preview-card"><div class="preview-head"><div><span class="live-dot"></span> CENA 3D EM TEMPO REAL</div><span id="previewStatus">PRONTO</span></div>
+<div id="stageWrap" class="stage-wrap"><canvas id="stage" aria-label="Cena 3D interativa"></canvas><div id="fallback" class="fallback" hidden>WebGL não está disponível neste navegador. Atualize o Chrome ou tente outro dispositivo.</div><div class="stage-overlay"><span>DRAG · GIRAR</span><span>PINCH · ZOOM</span></div></div>
+<div class="preview-controls"><button id="playBtn" class="primary">▶ Reproduzir</button><button id="resetBtn" class="secondary">↺ Reiniciar</button></div></section>
+<section class="panel"><div class="section-title"><span class="step">01</span><div><h2>Objeto e identidade</h2><p>Texto 3D com profundidade geométrica real.</p></div></div>
+<label class="field-label" for="logoText">Texto / símbolo</label><input id="logoText" maxlength="12" value="RAFAEL" placeholder="Ex.: R">
+<label class="field-label" for="tagline">Subtítulo</label><input id="tagline" maxlength="42" value="DESIGN STUDIO" placeholder="Texto secundário">
+<label class="field-label" for="logoFile">Imagem de logotipo (opcional, PNG/JPG/WebP)</label><input id="logoFile" type="file" accept="image/png,image/jpeg,image/webp">
+</section>
+<section class="panel"><div class="section-title"><span class="step">02</span><div><h2>Estilo da cena</h2><p>Configure o visual do seu render.</p></div></div>
+<label class="field-label" for="effect">Preset de animação</label><select id="effect"><option value="reveal">Logo Reveal 3D</option><option value="orbit">Órbita cinematográfica</option><option value="particles">Tempestade de partículas</option><option value="energy">Pulso de energia</option></select>
+<div class="two-col"><div><label class="field-label" for="duration">Duração</label><select id="duration"><option value="5">5 segundos</option><option value="8" selected>8 segundos</option><option value="12">12 segundos</option></select></div><div><label class="field-label" for="format">Formato de saída</label><select id="format"><option value="vertical" selected>Vertical 9:16</option><option value="square">Quadrado 1:1</option><option value="wide">Horizontal 16:9</option></select></div></div>
+<div class="color-row"><div><label class="field-label" for="violet">Violeta</label><input id="violet" type="color" value="#743BFF"></div><div><label class="field-label" for="cyan">Ciano</label><input id="cyan" type="color" value="#00D9FF"></div><div><label class="field-label" for="background">Fundo</label><input id="background" type="color" value="#101116"></div></div>
+<label class="field-label" for="motion">Intensidade do movimento</label><input id="motion" type="range" min="1" max="10" value="5" class="range">
+<div class="button-row"><button id="applyBtn" class="secondary full">Aplicar configurações</button><button id="screenshotBtn" class="secondary full">Salvar imagem PNG</button></div>
+</section>
+<section class="export-panel"><div class="section-title"><span class="step">03</span><div><h2>Renderizar vídeo</h2><p>Captura a cena WebGL no seu aparelho.</p></div></div>
+<div class="notice"><strong>LOCAL</strong><span>Usa WebGL + MediaRecorder do navegador. O vídeo é exportado em WebM; compatibilidade e desempenho dependem do Android.</span></div>
+<div class="progress-shell"><div id="progressBar"></div></div><p id="exportStatus" class="status-text">Pronto para renderizar.</p><button id="exportBtn" class="primary full">⬇ Renderizar vídeo WebM</button><a id="downloadLink" class="download-link" hidden>Baixar vídeo</a>
+</section>
+<section class="panel"><div class="section-title"><span class="step">04</span><div><h2>Salvar projeto</h2><p>Exporta as configurações para continuar depois.</p></div></div><div class="button-row"><button id="saveProject" class="secondary full">Exportar projeto JSON</button><label class="secondary file-button full">Importar projeto JSON<input id="importProject" type="file" accept="application/json" hidden></label></div></section>
+<section class="privacy-note"><span>◆</span><p><strong>Projetado para funcionar localmente.</strong><br>O app não envia arquivos para servidores nem usa APIs pagas. O modelo 3D procedural é gerado no próprio navegador. Não é um gerador de vídeo por IA.</p></section>
+</main><footer>VFX MOTION AI <span>•</span> LOCAL 3D ENGINE</footer>
+<script type="module" src="./app.js"></script>
+</body></html>

@@ -1,7 +1,7 @@
 {
-  "name": "VFX Motion AI",
-  "short_name": "VFX Motion",
-  "description": "Estúdio local de motion design e efeitos para celular.",
+  "name": "VFX Motion AI — 3D Studio",
+  "short_name": "VFX Motion AI",
+  "description": "Editor 3D local gratuito para Android",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",
