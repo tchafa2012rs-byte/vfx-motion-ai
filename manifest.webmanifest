@@ -1,0 +1,19 @@
+{
+  "name": "VFX Motion AI",
+  "short_name": "VFX Motion",
+  "description": "Estúdio local de motion design e efeitos para celular.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#101116",
+  "theme_color": "#101116",
+  "icons": [
+    {
+      "src": "./icons/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
